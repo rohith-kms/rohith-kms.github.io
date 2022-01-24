@@ -1,0 +1,44 @@
+.titlebar{
+  height: 10%;
+  width: 100%;
+  border: 2px solid black;
+  padding: 20px;
+  margin: auto;
+}
+
+.tree-container{
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+
+#tree-graphic{
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  padding: 20px;
+
+}
+
+.tree-text{
+  float: right;
+  margin: 20px;
+  padding: 20px;
+  border: 2px dotted black;
+}
+
+#slider-container{
+  margin: 100px;
+  width: 160px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.site_under_construction{
+  height: 20%;
+  width: 100%;
+  border: 2px solid black;
+  padding: 20px;
+}
