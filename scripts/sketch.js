@@ -36,7 +36,7 @@ function draw() {
 }
 
 function branch(len) {
-  strokeWeight(1+len/18);
+  strokeWeight(1+len*scaling/18);
   stroke(100-Math.round(len/3/scaling),150,255);
   line(0,0,0,-len);
   translate(0,-len);
