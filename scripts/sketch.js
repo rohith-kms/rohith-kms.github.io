@@ -3,8 +3,8 @@ function setup() {
     var canvas = createCanvas(600, 400);
     scaling = 1;
   } else {
-    var canvas = createCanvas(500,400);
-    scaling = 0.8;
+    var canvas = createCanvas(windowWidth/2+100,400);
+    scaling = 0.8*windowWidth/500;
   }
 
   // opacity of later elements
