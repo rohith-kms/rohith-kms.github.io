@@ -3,7 +3,7 @@ function setup() {
     var canvas = createCanvas(600, 400);
     scaling = 1;
   } else {
-    var canvas = createCanvas(windowWidth/2+100,400);
+    var canvas = createCanvas(windowWidth/2+100,windowHeight/2);
     scaling = 0.8*windowWidth/500;
   }
 
@@ -61,7 +61,7 @@ function openAnimation(){
   }
   else if (animationflag == 1) {
     angle += 0.01;
-    factor +=0.004;
+    factor +=0.0027;
     if (angle > 0.3){
       animationflag = 2;
     }
