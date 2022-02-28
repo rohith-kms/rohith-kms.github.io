@@ -71,3 +71,9 @@ nav{
     display: block;
   }
 }
+
+#spiral{
+  display: block;
+  margin: auto;
+  border: 2px solid black;
+}
