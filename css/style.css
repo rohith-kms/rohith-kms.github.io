@@ -19,25 +19,72 @@ html{
   margin-left: auto;
   margin-top: 10px;;
   margin-bottom: 10px;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 40px;
   position: sticky;
   margin: auto;
+}
+
+.page-heading{
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  position: sticky;
+  margin: auto;
+  text-align: center;
+}
+
+.section-heading{
+  font-family: 'Rubik', sans-serif;
+  font-size: 38px;
+  position: sticky;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.content{
+  font-family: monospace;
 }
 
 .header h6{
   font-family: monospace;
 }
 
-.header nav{
-  align-items: center;
+/* Card stuff */
+
+.card{
+  border-radius: 0.5em;
+  border: 2px solid #388087;
+  background-color: #f6f6f2;
+  padding: 1.5em;
+  margin-top: 1.2em;
+}
+
+.card .heading{
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  color: #388087;
+}
+
+.card a{
+  color: #6fb3b8;
+}
+
+.card .date{
   text-align: center;
-}
-.header .navbar-list li{
-  display: inline;
-  padding: 10px;
   font-size: 15px;
+  color: #6fb3b8;
 }
+
+.card .text-body{
+
+}
+
+.card button{
+  background-color: #388087;
+  color: white;
+}
+
 
 .body{
   top: 130px;
@@ -46,15 +93,6 @@ html{
   bottom: 0;
 }
 
-.poetry{
-  margin: auto;
-  margin-top: 3%;
-  height: 90%;
-  padding: 10%;
-  color: white;
-  background: rgb(50,50,50,0.5);
-  overflow: scroll;"
-}
 
 hr{
   width: 60%;
@@ -68,9 +106,20 @@ body{
 .jsapplet{
   text-align: center;
 }
+
+.nav-menu ul{
+  list-style: none;
+}
+
+
 @media only screen and (min-width: 700px) {
   .jsapplet {
-    margin-top: 4rem;
+    margin-top: 2rem;
+  }
+
+  .nav-menu li {
+    display: inline;
+    padding: 10px 20px;
   }
 }
 
@@ -79,22 +128,9 @@ body{
 }
 
 @media only screen and (max-width: 700px) {
-  .header{
-    display: block;
-    height: 200px;
-  }
 
   .body{
-    top: 220px;
+    top: 180px;
   }
 
-  .navbar-list li {
-    display: inline;
-  }
-}
-
-#spiral{
-  display: block;
-  margin: auto;
-  border: 2px solid black;
 }
