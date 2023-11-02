@@ -40,7 +40,7 @@ function branch(len) {
   stroke(100-Math.round(len/3/scaling),150,255);
   line(0,0,0,-len);
   translate(0,-len);
-  if (len > 4 * scaling){
+  if (len > 3 * scaling){
     push();
     rotate(angle);
     branch(len * factor);
@@ -54,13 +54,13 @@ function branch(len) {
 
 function openAnimation(){
   if (animationflag == 0) {
-    angle -= 0.05;
-    if (angle < 0.05) {
+    angle -= 0.08;
+    if (angle < 0.08) {
       animationflag = 1;
     }
   }
   else if (animationflag == 1) {
-    angle += 0.01;
+    angle += 0.02;
     factor +=0.0027;
     if (angle > 0.3){
       animationflag = 2;

@@ -6,6 +6,27 @@ html{
     font-size: 75%;
   }
 }
+
+body{
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Index */
+
+.title{
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.about{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+
+
 .header{
   top: 0;
   height: 130px;
@@ -35,11 +56,12 @@ html{
 
 .section-heading{
   font-family: 'Rubik', sans-serif;
-  font-size: 38px;
+  font-size: 30px;
   position: sticky;
   margin: auto;
-  text-align: center;
+  text-align: left;
   margin-bottom: 1.2em;
+  margin-top: 1.2em;
 }
 
 .content{
@@ -49,6 +71,7 @@ html{
 .header h6{
   font-family: monospace;
 }
+
 
 /* Card stuff */
 
@@ -62,8 +85,13 @@ html{
 
 .card .heading{
   font-family: 'Rubik', sans-serif;
-  font-size: 30px;
+  font-size: 18px;
   color: #388087;
+}
+
+.card img{
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .card a{
@@ -80,7 +108,7 @@ html{
 
 }
 
-.card button{
+button{
   background-color: #388087;
   color: white;
 }
@@ -96,10 +124,6 @@ html{
 
 hr{
   width: 60%;
-}
-
-body{
-  font-family: 'Roboto', sans-serif;
 }
 
 

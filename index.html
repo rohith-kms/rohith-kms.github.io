@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -48,72 +49,296 @@
     </div>
     <div class="container later">
       <section class="header">
-        <h1 class="title" style="margin-top: 0.7em;">Rohith K.M.S.</h1>
-        <h6 style="margin-top:10px;">Science Educator and Communicator</h6>
+        <h1 class="title">Hello! I'm Rohith K.M.S.</h1>
+
+        <div class="container about">
+          <p> I’m a Materials Science and Engineering (MSE) graduate from the Indian Institute of Science (IISc), specializing in computational modeling and simulation. In my undergraduate thesis project, I <a href="#thesis">simulated</a> the solidification of steel with the aim of making accurate predictions about the spatial variations in the composition of 3D-printed steel parts.</p>
+
+          <p>I feel that simulations have tremendous potential as <a href="#sims">educational tools</a>, and communicating the joy and wonder of science to audiences of all ages and backgrounds is something that resonates with my heart. I also want to make 3D printing accessible, cheap and sustainable, so that all around the world, people have a quick, easy and reliable way to shape their ideas and designs into reality.</p>
+
+          <p>Since graduating, I’ve worked as a <a href="teach">physics teacher</a>, <a href="#write">science writer</a>, and a curator at a science museum. I identify as <a href="#enby">non-binary</a> and go by the pronouns they/them.</p>
+        </div>
+
+        <!--<h6 style="margin-top:10px;">Science Educator and Communicator</h6>-->
       </section>
 
       <div class="container nav-menu" style="text-align: center;">
         <ul>
-          <li><a href="about/about.html">About</a></li>
-          <li><a href="media/Resume-without pic.pdf">Resume</a></li>
-          <li><a href="projects/projects-index.html">Projects</a></li>
-          <li><a href="">Simulations</a></li>
-          <li><a href="writing/writing-index.html">Writing</a></li>
+          <li><a href="media/Resume-without pic.pdf">CV</a></li>
+          <li><a href="https://github.com/rohith-kms">GitHub</a></li>
         </ul>
       </div>
 
-    </div>
+      <!-- Research -->
+
+      <h2 id="thesis" class="section-heading">Research</h2>
 
 
+      <div class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+            <img src="images/solid-steel.png" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="ten columns">
+                  <a href="https://www.youtube.com/watch?v=sadtiJRWS3Q" class="heading">Inter-dendritic Segregation of Austenitic Stainless Steels. (Bachelor's thesis)</a>
+                </div>
+                <div class="two columns">
+                  <p class="date">2020</p>
+                </div>
+              </div>
 
 
+              <p class="text-body">Supervisor: Prof. Abhik Choudhury, IISc. Investigated the inter-dendritic segregation in the Iron-Chromium binary system through mesoscale simulations using the phase field method. </p>
 
-<!--
-    <hr class="later" style="width:100%;">
-    <div class="container later" style="width: 100%;">
-      <div class="row">
-        <div class="three columns nav-cont">
-          <a class="nav-link" href="fantasy-fiction/fantasy-fiction.html">Writing</a>
+              <a href="media/FinalThesis.pdf"><button type="button" name="button">Read my thesis >></button></a>
+
+          </div>
         </div>
 
-        <div class="three columns nav-cont">
-          <a class="nav-link" href="#">Simulations</a>
-        </div>
-
-        <div class="three columns nav-cont">
-          <a class="nav-link" href="#">Resume</a>
-        </div>
-
-        <div class="three columns nav-cont">
-          <a class="nav-link" href="#">Non-Fiction</a>
-        </div>
-      </div>
-    </div>
-
-    <hr class="later" style="width:100%;">
-
-  -->
-
-<!--
-    <div class="container">
-
-      <p>Hi there!
-
-      <p>Welcome to my website :)
-
-      <p>The above animation of a binary fractal tree isn't a video or a gif: it was drawn and animated on your browser using the p5.js javascript library. This allows every user to use the computing power of their own devices to render such sketches, instead of relying on the limited computing power of the server this website is hosted on. By leveraging the computing power of each user's device, I can make interactive animations that run in real time on their web browser. Isnt't that just wonderful!?
-
-      <p> My goal with this website is to explore the power of such animations to communicate complex ideas: the science of "stuff" - everything from trees to metals to subatomic particles - expressed in the language of computer generated art on javascript canvases. Fortunately, I get to stand on the shoulders of several awesome people who have inspired me to use animations to communicate ideas. Here are some examples:
-
-      <ul>
-        <li>Daniel Shiffmann - <a href="https://thecodingtrain.com">The Coding Train</a></li>
-        <li>Grant Sanderson - <a href="https://www.youtube.com/c/3blue1brown">3 blue 1 brown</a></li>
-        <li>Nicky Case - <a href="https://ncase.me">ncase.me</a> </li>
-      </ul>
 
       </div>
 
-    -->
+      <!-- Projects -->
+
+      <h2 class="section-heading">Projects</h2>
+
+      <!-- GCODe -->
+
+        <div class="card">
+
+          <div class="row">
+
+            <div class="four columns">
+              <img src="images/GCODe-Mini-full.png" alt="">
+            </div>
+
+            <div class="eight columns">
+
+                <div class="row">
+                  <div class="ten columns">
+                    <a href="https://2017.igem.org/Team:IISc-Bangalore/Hardware/GCODe-Mini" class="heading">Growth Curve and Optical Density Device (GCODe)</a>
+                  </div>
+                  <div class="two columns">
+                    <p class="date">2017</p>
+                  </div>
+                </div>
+
+
+                <p class="text-body">Designed and developed (along with a few others) a device to automate the regular measurement of the optical density of bacterial populations in a culture to generate growth curves, thereby saving biologists countless hours in the lab at a fraction of the price of a commercial automated machine. Open source hardware with detailed DIY instructions. Device nominated for the best hardware prize at the International Genetically Engineered Machine (iGEM) competition, 2017. </p>
+
+
+            </div>
+          </div>
+        </div>
+
+      <!-- aNANt -->
+
+      <div class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+            <img src="images/aNANt.png" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="ten columns">
+                  <a href="https://anant.mrc.iisc.ac.in" class="heading">aNANt functional materials database</a>
+                </div>
+                <div class="two columns">
+                  <p class="date">2017</p>
+                </div>
+              </div>
+
+
+              <p class="text-body"> Lead frontend and backend developer of  aNANt (version 1) - a database (first of its kind in India) of over 23,000 computationally calculated functional materials and their crystal structure, electronic band structure and properties. </p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Teaching -->
+
+      <h2 id="teach" class="section-heading">Teaching</h2>
+
+      <div class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+            <img src="images/summer-camp.jpg" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="ten columns">
+                  <a href="https://www.youtube.com/watch?v=mfPc0MU3x1g&list=PLsZHOB7AHFXyldeS4t3efNoO0wsjyXJ6t" class="heading">Physics summer camp</a>
+                </div>
+                <div class="two columns">
+                  <p class="date">2023</p>
+                </div>
+              </div>
+
+              <p class="text-body"> Conducted a hands-on physics summer camp for students in grades 9-12. One of the most memorable occasions in my life!</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="sims">
+
+        <div class="row">
+
+          <div class="four columns">
+            <img src="images/sims.png" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="ten columns">
+                  <a href="https://github.com/rohith-kms/physics-simulations" class="heading">Physics simulations</a>
+                </div>
+                <div class="two columns">
+                  <p class="date">2023</p>
+                </div>
+              </div>
+
+              <p class="text-body"> Created some simulations to help highschool students visualise concepts in physics.</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Science Writing -->
+
+      <h2 id="write" class="section-heading">Science Writing (selected)</h2>
+
+      <div class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+          <img src="images/solar.jpeg" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="nine columns">
+                  <a href="https://kernel.iisc.ac.in/shining-a-light-on-the-future/" class="heading">Shining a Light on the Future</a>
+                </div>
+                <div class="three columns">
+                  <p class="date">Oct 14, 2023</p>
+                </div>
+              </div>
+
+              <p class="text-body"> A feature on perovskites, a family of next-generation solar materials that can be used to make flexible and transparent solar cells.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+          <img src="images/grain-sand.png" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="nine columns">
+                  <a href="https://kernel.iisc.ac.in/to-see-the-world-in-a-grain-of-sand/" class="heading">To See the World in a Grain of Sand</a>
+                </div>
+                <div class="three columns">
+                  <p class="date">June 14, 2022</p>
+                </div>
+              </div>
+
+              <p class="text-body"> A feature on the interdisciplinary work of Tejas G Murthy, Associate Professor at the Department of Civil Engineering at IISc, on granular materials and ways of analysing them such as Computed Tomography (CT) using powerful X-Ray sources.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <a href="https://kernel.iisc.ac.in/author/rohith-kms/"><button type="button" name="button">See more >></button></a>
+
+
+
+      <!-- Other cool stuff -->
+
+      <h2 class="section-heading">Random stuff I'm proud of</h2>
+
+      <div id="enby" class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+            <img src="images/queer-iisc.jpeg" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="nine columns">
+                  <a href="https://connect.iisc.ac.in/2022/06/why-it-is-important-for-queer-people-to-be-seen-in-iisc/" class="heading">Why it is Important for Queer People to be Seen in IISc</a>
+                </div>
+                <div class="three columns">
+                  <p class="date">29 June 2021</p>
+                </div>
+              </div>
+
+              <p class="text-body"> An article on the history of queer people like me in the IISc campus. Had the privelage of interviewing a lot of trailblazing queer alumni.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="row">
+
+          <div class="four columns">
+            <img src="images/p1.png" alt="">
+          </div>
+
+          <div class="eight columns">
+
+              <div class="row">
+                <div class="ten columns">
+                  <a href="https://www.yygarchive.org/search?query=akayor295" class="heading">Game design (8th grade)</a>
+                </div>
+                <div class="two columns">
+                  <p class="date">2011</p>
+                </div>
+              </div>
+
+              <p class="text-body"> I was obsessed with making games using the gamemaker software when I was in 8th grade. Most impressive of them was "The Panda Story" - I drew all the graphics myself. I published my games on the (now defunct) yoyogames website under the name Akayor295, but thankfully they're still up on the <a href="https://www.yygarchive.org/search?query=akayor295">archive</a>.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="margin-bottom: 3.4em;">
+
+      </div>
+
 
   </body>
 </html>
