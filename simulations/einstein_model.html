@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Einstein Model of Solid Heat Capacity</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.js"></script>
+  <style> body { display: flex; justify-content: center; align-items: center; height: 100vh; } </style>
+</head>
+<body>
+  <div id="sketch-holder"></div>
+
+  <script>
+    let k_b = 1;
+    let h = 50;
+    let omega = 4;
+    let step = 0.2;
+    let betaSlider;
+
+    function setup() {
+      let canvas = createCanvas(600, 400);
+      canvas.parent('sketch-holder');
+      betaSlider = createSlider(0.1, 12, 4, step);
+      betaSlider.position(width, height - 20);
+      describe('omega');
+    }
+
+    function draw() {
+        background(255);
+        omega = betaSlider.value();
+        textFont('Courier New');
+        text("Room Temperature", width/2-5, height-40);
+        text("3 k_b", 10, 20);
+        stroke("black");
+        text("Temperature", width/2-60, height-10);
+        text("Omega", width/2-100, height-120);
+        text("Specific Heat/atom", 10, 100);
+
+        let Ts = [];
+        let Cs = [];
+
+        for (let i = 1; i <= 500; i++) {
+            Ts.push(i);
+            Cs.push(C(i, omega));
+        }
+
+        plotCurve(Ts, Cs);
+        drawAxes();
+
+        // Draw horizontal and vertical reference lines
+        stroke('orange');
+        strokeWeight(2);
+        line(0, height - k_b * height / 1.1, width, height - k_b * height / 1.1);
+        line(273 * width / 500, 0, 273 * width / 500, height);
+    }
+
+    function beta(T) {
+        return 1 / (k_b * T);
+    }
+
+    function bhw(T, omega) {
+        return beta(T) * h * omega;
+    }
+
+    function C(T, omega) {
+        let bhwVal = bhw(T, omega);
+        return k_b * Math.pow(bhwVal, 2) * Math.exp(bhwVal) / Math.pow((Math.exp(bhwVal) - 1), 2);
+    }
+
+    function plotCurve(Ts, Cs) {
+        stroke(0);
+        noFill();
+        beginShape();
+        for (let i = 0; i < Ts.length; i++) {
+            let x = map(Ts[i], 1, 500, 0, width);
+            let y = map(Cs[i], 0, 1.1, height, 0);
+            vertex(x, y);
+        }
+        endShape();
+    }
+
+    function drawAxes() {
+        stroke(0);
+        strokeWeight(1);
+        line(0, height, width, height);  // x-axis
+        line(0, 0, 0, height);  // y-axis
+
+    }
+  </script>
+</body>
+</html>
